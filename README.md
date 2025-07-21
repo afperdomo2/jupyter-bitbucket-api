@@ -29,6 +29,24 @@ BITBUCKET_APP_PASSWORD=tu_token_app
 BITBUCKET_WORKSPACE=tu_workspace
 ```
 
+- BITBUCKET_USERNAME:
+  - Ir a Bitbucket
+  - Ir al botón de **settings** (La tuerca)
+  - Ir a la opción de **Personal Bitbucket settings**
+  - Ir a la opción de **Account settings**
+  - Buscar el campo de **Username**
+
+- BITBUCKET_APP_PASSWORD (API KEY):
+  - Ir a Bitbucket
+  - Ir al botón de **settings** (La tuerca)
+  - Ir a la opción de **Personal Bitbucket settings**
+  - Ir a la opción de **App password**
+  - Dar clic en el botón de **Create app password**, se le asigna un nombre y se seleccionan solo las opciones de **READ**
+
+- BITBUCKET_WORKSPACE:
+  - Este se encuentra en la URL del proyecto:
+    - **Ejemplo:** https://bitbucket.org/[ESTE ES TU WORKSPACE]/[REPOSITORIO]/pull-requests/
+
 ### Iniciar el proyecto
 
 ```sh
