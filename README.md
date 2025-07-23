@@ -23,11 +23,25 @@ El proyecto utiliza Jupyter Notebooks para conectarse a la API de Bitbucket, ext
 ### Configuración de credenciales
 
 1. Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
-```
+```sh
 BITBUCKET_USERNAME=tu_usuario
 BITBUCKET_APP_PASSWORD=tu_token_app
 BITBUCKET_WORKSPACE=tu_workspace
+
+# Solo para el reporte de bitbucket_incidencias_abiertas
+# Se coloca el nombre del desarrollador, que aparece en el campo de Author
+BITBUCKET_AUTHOR=your_name
+
+
+# Estas variables son para el archivo de archivos_estimaciones
+# En la lista, se deben poner los IDS de los archivos. Separar cada Id por una coma.
+DESARROLLADORES=Dev1,Dev2
+LISTA_IDS_ESTIMACIONES_GOOGLE_DRIVE=ID_ARCHIVO_DEV1,ID_ARCHIVO_DEV2
 ```
+
+Para obtener el ID de un archivo de estimación del desarrollador, se debe abrir el archivo y ver la URL (ver ESTE_ES_TU_ID)
+
+**Ejemplo:** https://docs.google.com/spreadsheets/d/ESTE_ES_TU_ID/edit?gid=0#gid=0
 
 - BITBUCKET_USERNAME:
   - Ir a Bitbucket
